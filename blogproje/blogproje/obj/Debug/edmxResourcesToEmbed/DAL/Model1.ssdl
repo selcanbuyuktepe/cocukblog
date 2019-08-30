@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="projeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="kategori">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Kategori" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="makale">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="makale" Type="nvarchar(max)" />
+    <Property Name="baslik" Type="nvarchar(max)" />
+    <Property Name="makaledetay" Type="nvarchar(max)" />
+    <Property Name="resim" Type="nvarchar(max)" />
+    <Property Name="tarih" Type="datetime" />
+    <Property Name="kategoriId" Type="int" />
+  </EntityType>
+  <Association Name="FK_makale_kategori">
+    <End Role="kategori" Type="Self.kategori" Multiplicity="0..1" />
+    <End Role="makale" Type="Self.makale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kategori">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="makale">
+        <PropertyRef Name="kategoriId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="projeModelStoreContainer">
+    <EntitySet Name="kategori" EntityType="Self.kategori" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="makale" EntityType="Self.makale" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_makale_kategori" Association="Self.FK_makale_kategori">
+      <End Role="kategori" EntitySet="kategori" />
+      <End Role="makale" EntitySet="makale" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

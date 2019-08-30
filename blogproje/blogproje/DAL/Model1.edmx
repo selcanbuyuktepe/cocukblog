@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="projeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="kategori">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Kategori" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="makale">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="makale" Type="nvarchar(max)" />
+          <Property Name="baslik" Type="nvarchar(max)" />
+          <Property Name="makaledetay" Type="nvarchar(max)" />
+          <Property Name="resim" Type="nvarchar(max)" />
+          <Property Name="tarih" Type="datetime" />
+          <Property Name="kategoriId" Type="int" />
+        </EntityType>
+        <Association Name="FK_makale_kategori">
+          <End Role="kategori" Type="Self.kategori" Multiplicity="0..1" />
+          <End Role="makale" Type="Self.makale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="kategori">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="makale">
+              <PropertyRef Name="kategoriId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="projeModelStoreContainer">
+          <EntitySet Name="kategori" EntityType="Self.kategori" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="makale" EntityType="Self.makale" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_makale_kategori" Association="Self.FK_makale_kategori">
+            <End Role="kategori" EntitySet="kategori" />
+            <End Role="makale" EntitySet="makale" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="projeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="kategori">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Kategori1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="makale" Relationship="projeModel.FK_makale_kategori" FromRole="kategori" ToRole="makale" />
+        </EntityType>
+        <EntityContainer Name="projeEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="kategori" EntityType="Self.kategori" />
+          <EntitySet Name="makale" EntityType="projeModel.makale" />
+          <AssociationSet Name="FK_makale_kategori" Association="projeModel.FK_makale_kategori">
+            <End Role="kategori" EntitySet="kategori" />
+            <End Role="makale" EntitySet="makale" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="makale">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="makale1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="baslik" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="makaledetay" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="resim" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="tarih" Type="DateTime" Precision="3" />
+          <Property Name="kategoriId" Type="Int32" />
+          <NavigationProperty Name="kategori" Relationship="projeModel.FK_makale_kategori" FromRole="makale" ToRole="kategori" />
+        </EntityType>
+        <Association Name="FK_makale_kategori">
+          <End Type="projeModel.kategori" Role="kategori" Multiplicity="0..1" />
+          <End Type="projeModel.makale" Role="makale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="kategori">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="makale">
+              <PropertyRef Name="kategoriId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="projeModelStoreContainer" CdmEntityContainer="projeEntities1">
+          <EntitySetMapping Name="kategori">
+            <EntityTypeMapping TypeName="projeModel.kategori">
+              <MappingFragment StoreEntitySet="kategori">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Kategori1" ColumnName="Kategori" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="makale">
+            <EntityTypeMapping TypeName="projeModel.makale">
+              <MappingFragment StoreEntitySet="makale">
+                <ScalarProperty Name="kategoriId" ColumnName="kategoriId" />
+                <ScalarProperty Name="tarih" ColumnName="tarih" />
+                <ScalarProperty Name="resim" ColumnName="resim" />
+                <ScalarProperty Name="makaledetay" ColumnName="makaledetay" />
+                <ScalarProperty Name="baslik" ColumnName="baslik" />
+                <ScalarProperty Name="makale1" ColumnName="makale" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

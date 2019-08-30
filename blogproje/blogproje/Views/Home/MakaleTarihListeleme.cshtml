@@ -1,0 +1,22 @@
+﻿@model List<blogproje.DAL.makale>
+
+@{
+    ViewBag.Title = "MakaleTarihListeleme";
+}
+
+
+@foreach (var makale in Model)
+    {
+        <h5>@makale.baslik</h5>
+        <p class="post-meta">
+            @makale.makale1
+        </p>
+        <div class="post-preview">
+            <p class="post-meta">
+                @makale.tarih
+             
+            </p>
+
+        </div>
+        <hr />
+    }

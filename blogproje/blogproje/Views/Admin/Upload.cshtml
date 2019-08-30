@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Upload";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Upload</h2>
+@using (Ajax.BeginForm(null, null, null, new { enctype = "multipart/form-data" }))
+{
+
+    <input type="file" name="file" class="form-control" />
+    <button type="submit" class="btn btn-success" value="Yükle"> Yükle</button>
+}

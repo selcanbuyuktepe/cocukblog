@@ -1,0 +1,185 @@
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\roslyn\csc.exe
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\roslyn\vbc.exe
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\roslyn\VBCSCompiler.exe
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\blogproje.dll.config
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\blogproje.dll
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\blogproje.pdb
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\System.Web.Helpers.dll
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\System.Web.Mvc.dll
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\System.Web.Razor.dll
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\System.Web.Webpages.Deployment.dll
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\System.Web.Webpages.dll
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\System.Web.Webpages.Razor.dll
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\System.Web.Razor.xml
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\System.Web.Webpages.xml
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\System.Web.Webpages.Deployment.xml
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\System.Web.Webpages.Razor.xml
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\System.Web.Helpers.xml
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\System.Web.Mvc.xml
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\obj\Debug\blogproje.dll
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\obj\Debug\blogproje.pdb
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\EntityFramework.dll
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\EntityFramework.SqlServer.dll
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\EntityFramework.xml
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\bin\EntityFramework.SqlServer.xml
+G:\Yeni klasör\blogproje\blogproje\bin\roslyn\csc.exe
+G:\Yeni klasör\blogproje\blogproje\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Yeni klasör\blogproje\blogproje\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Yeni klasör\blogproje\blogproje\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Yeni klasör\blogproje\blogproje\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Yeni klasör\blogproje\blogproje\bin\roslyn\System.Collections.Immutable.dll
+G:\Yeni klasör\blogproje\blogproje\bin\roslyn\vbc.exe
+G:\Yeni klasör\blogproje\blogproje\bin\roslyn\VBCSCompiler.exe
+G:\Yeni klasör\blogproje\blogproje\bin\roslyn\VBCSCompiler.exe.config
+G:\Yeni klasör\blogproje\blogproje\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Yeni klasör\blogproje\blogproje\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Yeni klasör\blogproje\blogproje\bin\roslyn\System.Reflection.Metadata.dll
+G:\Yeni klasör\blogproje\blogproje\bin\blogproje.dll.config
+G:\Yeni klasör\blogproje\blogproje\bin\blogproje.dll
+G:\Yeni klasör\blogproje\blogproje\bin\blogproje.pdb
+G:\Yeni klasör\blogproje\blogproje\bin\EntityFramework.dll
+G:\Yeni klasör\blogproje\blogproje\bin\EntityFramework.SqlServer.dll
+G:\Yeni klasör\blogproje\blogproje\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Yeni klasör\blogproje\blogproje\bin\Microsoft.Web.Infrastructure.dll
+G:\Yeni klasör\blogproje\blogproje\bin\System.Web.Helpers.dll
+G:\Yeni klasör\blogproje\blogproje\bin\System.Web.Mvc.dll
+G:\Yeni klasör\blogproje\blogproje\bin\System.Web.Razor.dll
+G:\Yeni klasör\blogproje\blogproje\bin\System.Web.Webpages.Deployment.dll
+G:\Yeni klasör\blogproje\blogproje\bin\System.Web.Webpages.dll
+G:\Yeni klasör\blogproje\blogproje\bin\System.Web.Webpages.Razor.dll
+G:\Yeni klasör\blogproje\blogproje\bin\EntityFramework.xml
+G:\Yeni klasör\blogproje\blogproje\bin\EntityFramework.SqlServer.xml
+G:\Yeni klasör\blogproje\blogproje\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Yeni klasör\blogproje\blogproje\bin\System.Web.Razor.xml
+G:\Yeni klasör\blogproje\blogproje\bin\System.Web.Webpages.xml
+G:\Yeni klasör\blogproje\blogproje\bin\System.Web.Webpages.Deployment.xml
+G:\Yeni klasör\blogproje\blogproje\bin\System.Web.Webpages.Razor.xml
+G:\Yeni klasör\blogproje\blogproje\bin\System.Web.Helpers.xml
+G:\Yeni klasör\blogproje\blogproje\bin\System.Web.Mvc.xml
+G:\Yeni klasör\blogproje\blogproje\obj\Debug\blogproje.csprojResolveAssemblyReference.cache
+G:\Yeni klasör\blogproje\blogproje\obj\Debug\blogproje.dll
+G:\Yeni klasör\blogproje\blogproje\obj\Debug\blogproje.pdb
+C:\Users\SELCAN BÜYÜKTEPE\Desktop\blogproje\blogproje\obj\Debug\blogproje.csprojResolveAssemblyReference.cache
+D:\blogproje\blogproje\bin\roslyn\csc.exe
+D:\blogproje\blogproje\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\blogproje\blogproje\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\blogproje\blogproje\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\blogproje\blogproje\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\blogproje\blogproje\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\blogproje\blogproje\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\blogproje\blogproje\bin\roslyn\System.Collections.Immutable.dll
+D:\blogproje\blogproje\bin\roslyn\System.Reflection.Metadata.dll
+D:\blogproje\blogproje\bin\roslyn\vbc.exe
+D:\blogproje\blogproje\bin\roslyn\VBCSCompiler.exe
+D:\blogproje\blogproje\bin\roslyn\VBCSCompiler.exe.config
+D:\blogproje\blogproje\bin\blogproje.dll.config
+D:\blogproje\blogproje\bin\blogproje.dll
+D:\blogproje\blogproje\bin\blogproje.pdb
+D:\blogproje\blogproje\bin\EntityFramework.dll
+D:\blogproje\blogproje\bin\EntityFramework.SqlServer.dll
+D:\blogproje\blogproje\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\blogproje\blogproje\bin\Microsoft.Web.Infrastructure.dll
+D:\blogproje\blogproje\bin\System.Web.Helpers.dll
+D:\blogproje\blogproje\bin\System.Web.Mvc.dll
+D:\blogproje\blogproje\bin\System.Web.Razor.dll
+D:\blogproje\blogproje\bin\System.Web.Webpages.Deployment.dll
+D:\blogproje\blogproje\bin\System.Web.Webpages.dll
+D:\blogproje\blogproje\bin\System.Web.Webpages.Razor.dll
+D:\blogproje\blogproje\bin\EntityFramework.xml
+D:\blogproje\blogproje\bin\EntityFramework.SqlServer.xml
+D:\blogproje\blogproje\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\blogproje\blogproje\bin\System.Web.Razor.xml
+D:\blogproje\blogproje\bin\System.Web.Webpages.xml
+D:\blogproje\blogproje\bin\System.Web.Webpages.Deployment.xml
+D:\blogproje\blogproje\bin\System.Web.Webpages.Razor.xml
+D:\blogproje\blogproje\bin\System.Web.Helpers.xml
+D:\blogproje\blogproje\bin\System.Web.Mvc.xml
+D:\blogproje\blogproje\obj\Debug\blogproje.csprojResolveAssemblyReference.cache
+D:\blogproje\blogproje\obj\Debug\blogproje.dll
+D:\blogproje\blogproje\obj\Debug\blogproje.pdb
+G:\blogproje\blogproje\bin\roslyn\csc.exe
+G:\blogproje\blogproje\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\blogproje\blogproje\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\blogproje\blogproje\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\blogproje\blogproje\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\blogproje\blogproje\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\blogproje\blogproje\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\blogproje\blogproje\bin\roslyn\System.Collections.Immutable.dll
+G:\blogproje\blogproje\bin\roslyn\System.Reflection.Metadata.dll
+G:\blogproje\blogproje\bin\roslyn\vbc.exe
+G:\blogproje\blogproje\bin\roslyn\VBCSCompiler.exe
+G:\blogproje\blogproje\bin\roslyn\VBCSCompiler.exe.config
+G:\blogproje\blogproje\bin\blogproje.dll.config
+G:\blogproje\blogproje\bin\blogproje.dll
+G:\blogproje\blogproje\bin\blogproje.pdb
+G:\blogproje\blogproje\bin\EntityFramework.dll
+G:\blogproje\blogproje\bin\EntityFramework.SqlServer.dll
+G:\blogproje\blogproje\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\blogproje\blogproje\bin\Microsoft.Web.Infrastructure.dll
+G:\blogproje\blogproje\bin\System.Web.Helpers.dll
+G:\blogproje\blogproje\bin\System.Web.Mvc.dll
+G:\blogproje\blogproje\bin\System.Web.Razor.dll
+G:\blogproje\blogproje\bin\System.Web.Webpages.Deployment.dll
+G:\blogproje\blogproje\bin\System.Web.Webpages.dll
+G:\blogproje\blogproje\bin\System.Web.Webpages.Razor.dll
+G:\blogproje\blogproje\bin\EntityFramework.xml
+G:\blogproje\blogproje\bin\EntityFramework.SqlServer.xml
+G:\blogproje\blogproje\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\blogproje\blogproje\bin\System.Web.Razor.xml
+G:\blogproje\blogproje\bin\System.Web.Webpages.xml
+G:\blogproje\blogproje\bin\System.Web.Webpages.Deployment.xml
+G:\blogproje\blogproje\bin\System.Web.Webpages.Razor.xml
+G:\blogproje\blogproje\bin\System.Web.Helpers.xml
+G:\blogproje\blogproje\bin\System.Web.Mvc.xml
+G:\blogproje\blogproje\obj\Debug\blogproje.csprojResolveAssemblyReference.cache
+G:\blogproje\blogproje\obj\Debug\blogproje.dll
+G:\blogproje\blogproje\obj\Debug\blogproje.pdb
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\roslyn\csc.exe
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\roslyn\vbc.exe
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\roslyn\VBCSCompiler.exe
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\blogproje.dll.config
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\blogproje.dll
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\blogproje.pdb
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\EntityFramework.dll
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\EntityFramework.SqlServer.dll
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\System.Web.Helpers.dll
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\System.Web.Mvc.dll
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\System.Web.Razor.dll
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\System.Web.Webpages.Deployment.dll
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\System.Web.Webpages.dll
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\System.Web.Webpages.Razor.dll
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\EntityFramework.xml
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\EntityFramework.SqlServer.xml
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\System.Web.Razor.xml
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\System.Web.Webpages.xml
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\System.Web.Webpages.Deployment.xml
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\System.Web.Webpages.Razor.xml
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\System.Web.Helpers.xml
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\bin\System.Web.Mvc.xml
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\obj\Debug\blogproje.csprojResolveAssemblyReference.cache
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\obj\Debug\blogproje.dll
+C:\Users\SELCAN BÜYÜKTEPE\Documents\blogproje\blogproje\obj\Debug\blogproje.pdb

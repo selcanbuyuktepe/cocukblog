@@ -1,0 +1,217 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Çocuk Olmak</title>
+    <style>
+        .footer {
+            background: linear-gradient(red, blue);
+          
+            width: 100%;
+            height: 250px;
+            float: left;
+            color: white;
+            font-family: arial;
+        }
+
+            .footer #kutu b {
+                font-size: 16px;
+            }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .footer_container {
+            width: 700px;
+            height: 150px;
+            margin: 50px auto;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 17px 0;
+            padding: 0px;
+        }
+
+        #kutu {
+            width: auto;
+            height: 125px;
+            float: left;
+        }
+
+        ul li {
+            float: left;
+            font-family: tahoma;
+            font-size: 13px;
+            margin-bottom: 6px;
+            clear: left;
+            color: #1c0f45;
+        }
+
+        #kutu:last-child li {
+            float: left;
+            clear: none;
+            margin-right: 10px;
+        }
+
+        p.egik {
+            font-style: italic;
+        }
+        
+
+    </style>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/css/all.min.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="~/Content/css/clean-blog.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a href="/Home">
+                <img src="~/img/qqqqq.png" width="200" height="100" />
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        @Html.ActionLink("ANASAYFA", "Index", "Home")
+                    </li>
+                    <li class="nav-item">
+                       @Html.ActionLink("OKUL ÖNCESİ ETKİNLİK", "OkulOncesiEtkinlik", "Home") 
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("GELİŞİM", "Gelisim", "Home") 
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("PSİKOLOJİ", "Psikoloji", "Home") 
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('http://localhost:51009/img/foto.jpg')">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="site-heading">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="col-md-12 row">
+                <div class="col-md-8">
+                    @RenderBody()
+                    </div>
+                <div class="col-md-4">
+                      <div class="card my-4">
+                          <div class="list-group">
+                              
+                                  <center>KATEGORİLER</center>
+                              
+                              @{
+                                  using (blogproje.DAL.projeEntities1 db = new blogproje.DAL.projeEntities1())
+                                  {
+                                      foreach (var item in db.kategori.ToList())
+                                      {
+                                          <a href="KategoriListele?id=@item.Id" class="list-group-item">@item.Kategori1 (@item.makale.Count)</a>
+                                      }
+                                  }
+                              }
+                          </div>
+                      </div>
+                            <div class="list-group">
+                               <center>MAKALE ARŞİVİ</center>
+                               @using (blogproje.DAL.projeEntities1 db = new blogproje.DAL.projeEntities1())
+            {
+                foreach (var yil in db.makale.Select(h => h.tarih.Value.Year).Distinct().ToList())
+                {
+                                        <p class="list-group-item"> @yil.ToString() ( @(db.makale.Count(h => h.tarih.Value.Year == yil).ToString()) ) </p>
+
+                                        <ul>
+                                            @foreach (var ay in db.makale.Where(h => h.tarih.Value.Year == yil).Select(k => k.tarih.Value.Month).Distinct().ToList())
+                                            {
+                                                <li>
+                                                    <a href="@Url.Action("MakaleTarihListeleme","Home",new { yil=yil,ay=ay})">
+
+
+
+                                                        @ay    ( @(db.makale.Count(h => h.tarih.Value.Year == yil && h.tarih.Value.Month == ay).ToString()) )
+
+                                                    </a>
+                                                </li>
+                                            }
+                                        </ul>
+                                    }
+                                }
+                            </div>
+                       
+
+                    </div>
+                </div>
+
+                </div>
+         
+       
+    <!-- Footer -->
+    <div class="footer">
+        <!--Footer_container-->
+        <div class="footer_container">
+            <!--kutu-->
+            <div id="kutu">
+                <b>SAYFALAR</b>
+                <ul>
+                    <li>@Html.ActionLink("HAKKIMIZDA", "hakkimizda", "Home")</li>
+                    <li>@Html.ActionLink("İLETİŞİM", "iletisim", "Home")</li>
+
+                </ul>
+            </div>
+            <div id="kutu" style="margin-left:150px;">
+                <b>İLETİŞİM</b>
+                <ul>
+                    <li>SELCAN BÜYÜKTEPE</li>
+                    <li>C: 0 535 080 18 36</li>
+                    <li>T: 0 380 720 25 25</li>
+                    <li>M: selcanbuyuktepe@outlook.com</li>
+                    <li>M: selcanbuyuktepe81@gmail.com</li>
+                </ul>
+            </div>
+            <!--kutu###-->
+            <!--kutu-->
+            <div id="kutu" style="margin-left:50px;">
+                <b>Çocuk Gelişimi Blog 2019</b>
+
+                <ul>
+                    <li><img src="~/img/mother-child-logo-hi.png" width="100" height="100" /></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <link href="~/Scripts/js/jquery.min.js" rel="stylesheet" />
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link href="~/Scripts/js/bootstrap.bundle.min.js" rel="stylesheet" />
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+    <link href="~/Scripts/js/clean-blog.min.js" rel="stylesheet" />
+</body>
+</html>

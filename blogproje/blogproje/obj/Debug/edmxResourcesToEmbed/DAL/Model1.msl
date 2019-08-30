@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="projeModelStoreContainer" CdmEntityContainer="projeEntities1">
+    <EntitySetMapping Name="kategori">
+      <EntityTypeMapping TypeName="projeModel.kategori">
+        <MappingFragment StoreEntitySet="kategori">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Kategori1" ColumnName="Kategori" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="makale">
+      <EntityTypeMapping TypeName="projeModel.makale">
+        <MappingFragment StoreEntitySet="makale">
+          <ScalarProperty Name="kategoriId" ColumnName="kategoriId" />
+          <ScalarProperty Name="tarih" ColumnName="tarih" />
+          <ScalarProperty Name="resim" ColumnName="resim" />
+          <ScalarProperty Name="makaledetay" ColumnName="makaledetay" />
+          <ScalarProperty Name="baslik" ColumnName="baslik" />
+          <ScalarProperty Name="makale1" ColumnName="makale" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

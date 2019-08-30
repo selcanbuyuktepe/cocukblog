@@ -1,0 +1,36 @@
+﻿@using blogproje.DAL;
+@model IEnumerable<blogproje.DAL.kategori>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="row">
+    <div class="col-md-3">
+        <div class="list-group">
+            <a href="#" class="list-group-item active">
+                Kategoriler
+            </a>
+            @foreach (var kategori in Model)
+            {
+                <a href="#" class="list-group-item">@kategori.Kategori1 (@kategori.makale.Count)</a>
+            }
+        </div>
+    </div>
+</div>
+<h2>Index</h2>
+<div class="col-md-9">
+    <h2>
+        makaleler
+    </h2>
+@{ 
+    using (projeEntities1 db = new projeEntities1())
+    {
+        foreach (var item in db.makale.OrderByDescending(h=>h.Id))
+        {
+            @item.makale1 <br />
+        }
+    }
+}
+</div>
+
+

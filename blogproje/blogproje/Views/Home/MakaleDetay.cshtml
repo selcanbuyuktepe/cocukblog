@@ -1,0 +1,47 @@
+﻿@model blogproje.DAL.makale
+
+@{
+    ViewBag.Title = "MakaleDetay";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        
+
+       
+
+        <dd>
+            <font face="tahoma" size="5" color="	#8B0000">@Html.DisplayFor(model => model.baslik)</font> 
+        </dd>
+        
+
+        <dd>
+            <font face="tahoma" size="3" color="#000000">@Html.DisplayFor(model => model.makale1) </font> 
+        </dd>
+       
+
+        <dd>
+            <font face="tahoma" size="3" color="#000000">@Html.DisplayFor(model => model.makaledetay)</font>
+   
+        </dd>
+
+        
+
+        <dd>
+            @Html.DisplayFor(model => model.tarih)
+        </dd>
+
+        
+
+        <dd>
+            @Html.DisplayFor(model => model.kategori.Kategori1)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,46 @@
+﻿@using blogproje.DAL;
+@model List<blogproje.DAL.kategori>
+
+@{
+    ViewBag.Title = "Index";
+} <div class="container">
+      <div class="row">
+ @{
+     using (blogproje.DAL.projeEntities1 db = new blogproje.DAL.projeEntities1())
+     {
+         foreach (var item in db.makale.OrderByDescending(h => h.Id).Take(9).ToList())
+
+         {<font face="tahoma" size="5" color="	#8B0000">@item.baslik </font>
+            
+       
+                          <p class="post-meta">
+                              <font face="tahoma" size="3" color="#000000">@item.makale1 </font> 
+                          </p>
+                          <div class="post-preview">
+                              <p class="post-meta">
+                                  @item.tarih
+                                  @Html.ActionLink("Devamını Oku", "MakaleDetay", "Home", new { id = item.Id }, new { @class = "btn btn-outline-danger" })
+                              </p>
+
+                          </div>
+                          <hr />
+
+
+
+                      }
+
+                  }
+
+              }
+          </div>
+      </div>
+
+
+
+
+
+
+
+
+
+

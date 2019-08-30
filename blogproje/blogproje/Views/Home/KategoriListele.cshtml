@@ -1,0 +1,28 @@
+﻿@model IEnumerable<blogproje.DAL.makale>
+
+@{
+    ViewBag.Title = "KategoriListele";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+            using (blogproje.DAL.projeEntities1 db = new blogproje.DAL.projeEntities1())
+            {
+                foreach (var konu in ViewBag.konu)
+                { <img class="card-img-top" src="@konu.resim">
+            <font face="tahoma" size="5" color="#8B0000"> @konu.baslik </font> 
+                    <p class="post-meta">
+                        <font face="tahoma" size="3" color="#000000">@konu.makale1 </font> 
+                    </p>
+                    <div class="post-preview">
+                        <p class="post-meta">
+                            @konu.tarih
+                            @Html.ActionLink("Devamını Oku", "MakaleDetay", "Home", new { id = konu.Id }, new { @class = "btn btn-outline-danger" })
+                        </p>
+
+                    </div>
+                    <hr />
+
+        }
+    }
+}
